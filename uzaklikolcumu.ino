@@ -17,7 +17,7 @@ void loop() {
   delayMicroseconds(10);
   digitalWrite(TRIG,LOW);
   sure=pulseIn(ECHO,HIGH);
-  uzaklik=(sure/29.1/2);
+  uzaklik=(sure/29.1/2); // sanırım bu 29.1 sabiti 20 derece Celsius için geçerli.diğer değerler için ayrıca hesaplamak gerekli
   if(uzaklik>200)
   {
     uzaklik=200;
